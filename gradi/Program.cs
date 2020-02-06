@@ -25,6 +25,7 @@ namespace gradi
                         double ampiezza = (gradi * 60 * 60) + (primi * 60) + secondi;
                         Console.WriteLine($"l'ampiezza è {ampiezza} secondi");
                     }
+
                     
                 }else if(gradi>360)
                 {
