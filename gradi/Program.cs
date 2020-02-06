@@ -12,7 +12,7 @@ namespace gradi
         {
             Console.WriteLine("inserisci i gradi?");
             int gradi = int.Parse(Console.ReadLine());
-            if(gradi<=360)
+            if (gradi <= 360)
             {
                 Console.WriteLine("inserisci i primi?");
                 int primi = int.Parse(Console.ReadLine());
@@ -26,8 +26,9 @@ namespace gradi
                         Console.WriteLine($"l'ampiezza è {ampiezza} secondi");
                     }
 
-                    
-                }else if(gradi>360)
+                    //prima parte senza il ritorno del numero se è sbagliato qundi se sbagli devi rinizzaire
+                }
+                else if (gradi > 360)
                 {
                     Console.WriteLine("inserisci i gradi?");
                     int gradi1 = int.Parse(Console.ReadLine());
@@ -44,12 +45,13 @@ namespace gradi
                                 double ampiezza = (gradi1 * 60 * 60) + (primi1 * 60) + secondi1;
                                 Console.WriteLine($"l'ampiezza è {ampiezza} secondi");
                             }
-
+                            //secondo con il ritorno
                         }
 
                     }
                 }
-            Console.ReadLine();
+                Console.ReadLine();
+            }
         }
     }
 }
